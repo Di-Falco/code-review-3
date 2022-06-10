@@ -55,3 +55,15 @@ Code:
 const number = 1;
 PrimeCheck(number);
 Expected Output: "1 is not a prime or a composite number."
+
+Test: "Should return with an affirmative statement if input is a prime number"
+Code:
+const number = 7;
+PrimeCheck(number);
+ExpectedOutput: "7 is prime"
+
+Test: "Should return with a negative statement if input is not a prime number"
+Code:
+const number = 6;
+PrimeCheck(number);
+ExpectedOutput: "6 is not prime"

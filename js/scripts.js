@@ -31,12 +31,19 @@ function MrRogersNeighborhood(input) {
 }
 
 function PrimeCheck (number) {
-  size = parseInt(number);
-  if (!Number(size) || size <= -1) {
+  number = parseInt(number);
+  if (!Number(number) || number <= -1) {
     return "Error: Please input a positive number. Do not include any characters.";
-  }
-  if (number === 1) {
+  } else if (number === 1) {
     return "1 is not a prime or a composite number.";
+  } else {
+    for (let i = 2; i < number; i++) {
+      if (number % i === 0) {
+        return String(number) + " is not prime"
+      } else {
+        return String(number) + " is prime"
+      }
+    }
   }
 }
 
