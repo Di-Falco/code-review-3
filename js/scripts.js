@@ -11,7 +11,7 @@ function StringToArray(text) {
 
 function MrRogersNeighborhood(input) {
   size = parseInt(input);
-  if (!Number(size) || size < 0) {
+  if (!Number(size) || size <= -1) {
     return "Error: Please input a positive number. Do not include any characters.";
   }
   let array = [];
@@ -28,6 +28,13 @@ function MrRogersNeighborhood(input) {
     }
   }
   return array.join(" ");
+}
+
+function PrimeCheck (number) {
+  size = parseInt(number);
+  if (!Number(size) || size <= -1) {
+    return "Error: Please input a positive number. Do not include any characters.";
+  }
 }
 
 // UI LOGIC

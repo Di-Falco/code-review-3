@@ -10,15 +10,15 @@ p {
 .form-control {
   border: 5px solid darkred;
   border-radius: 15px;
-  background-color: powderblue;
+  background-color: #e8f0fe;
 }
 
 .form-control:focus {
-  background-color: powderblue;
+  background-color: #e8f0fe;
 }
 
 select.form-control:focus::-ms-value {
-  background-color: powderblue;
+  background-color: #e8f0fe;
 }
 
 .btn {

@@ -41,3 +41,11 @@ Code:
 const input = "13";
 MrRogersNeighborhood(input);
 Expected Output: (14) [0, 'Beep!', 'Boop!', 3, 4, 5, 6, 7, 8, 9, 'Beep!', 'Beep!', 'Boop!', 'Won't you be my neighbor?']
+
+Describe PrimeCheck()
+
+Test: "Should return an error message if a non-numerical value is entered"
+Code:
+const number = "hello";
+PrimeCheck(number);
+Expected Output: 'Error: Please input a positive number. Do not include any characters.'
