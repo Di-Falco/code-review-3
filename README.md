@@ -67,3 +67,9 @@ Code:
 const number = 6;
 PrimeCheck(number);
 ExpectedOutput: "6 is not prime"
+
+Test: "Should return an affirmative response when input is equal to 2"
+Code:
+const number = 2;
+PrimeChecker(number);
+Expected Output: "2 is prime"

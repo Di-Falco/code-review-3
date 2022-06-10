@@ -36,6 +36,8 @@ function PrimeCheck (number) {
     return "Error: Please input a positive number. Do not include any characters.";
   } else if (number === 1) {
     return "1 is not a prime or a composite number.";
+  } else if (number === 2) {
+    return "2 is prime";
   } else {
     for (let i = 2; i < number; i++) {
       if (number % i === 0) {
