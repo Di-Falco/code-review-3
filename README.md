@@ -1,8 +1,8 @@
-# {Application Name}
+# Mr Rogers Prime Factors
 
-#### By {List of contributors}
+#### By Anthony DiFalco
 
-#### {Brief description of application}
+#### An exercise in using loops and arrays in JavaScript
 
 ## Technologies Used
 
