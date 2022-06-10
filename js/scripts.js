@@ -72,6 +72,8 @@ function PrimeFactors(number, array) {
   for(let i = 0; i < array.length; i++) {
     if(number % array[i] === 0){
       factorArray.push(array[i]);
+      console.log(array[i], (number % array[i]));
+      console.log(factorArray);
     }
   }
   return factorArray;
@@ -87,14 +89,19 @@ $(document).ready(function() {
 
     $(".output").text(resultString);
   });
+
   $("form#primes").submit(function(event) {
     event.preventDefault();
     const inputNum = $("#inputNumber").val();
     const prime = PrimeCheck(inputNum);
     const primeStatus = prime[0];
-    const primeList = prime.slice(1).join(", ");
+    const primeList = prime.slice(1);
+    const factors = PrimeFactors(inputNum, primeList);
+    console.log(factors);
 
     $(".prime-status").text(primeStatus);
-    $(".prime-list").text(primeList);
+    $(".prime-factors").text(factors);
+    $(".prime-list").text(primeList.join(", "));
+
   });
 });
