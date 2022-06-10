@@ -1,3 +1,5 @@
+
+
 Describe: StringToArray()
 
 Test: "Should return an input number as a character array of its digits"
@@ -39,4 +41,3 @@ Code:
 const input = "13";
 MrRogersNeighborhood(input);
 Expected Output: (14) [0, 'Beep!', 'Boop!', 3, 4, 5, 6, 7, 8, 9, 'Beep!', 'Beep!', 'Boop!', 'Won't you be my neighbor?']
-

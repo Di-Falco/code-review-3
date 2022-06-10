@@ -1,0 +1,49 @@
+h2 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font-weight: 500;
+}
+
+.form-control {
+  border: 5px solid darkred;
+  border-radius: 15px;
+  background-color: powderblue;
+}
+
+.form-control:focus {
+  background-color: powderblue;
+}
+
+select.form-control:focus::-ms-value {
+  background-color: powderblue;
+}
+
+.btn {
+  border: 5px solid darkred;
+  border-radius: 15px;
+  background-color: #ffe1ba;
+  margin: auto;
+  display: block;
+}
+
+.box {
+  border: 5px solid darkred;
+  border-radius: 15px;
+  background-color: burlywood;
+  padding: 4%;
+  margin: auto;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  width: 100%;
+  height: max-content;
+  box-sizing: border-box;
+  font-weight: 300;
+}
+
+body {
+  background-color: burlywood;
+  color: black;
+}
