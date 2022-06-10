@@ -67,6 +67,16 @@ function PrimeCheck (number) {
   }
 }
 
+function PrimeFactors(number, array) {
+  let factorArray = [];
+  for(let i = 0; i < array.length; i++) {
+    if(number % array[i] === 0){
+      factorArray.push(array[i]);
+    }
+  }
+  return factorArray;
+}
+
 // UI LOGIC
 
 $(document).ready(function() {

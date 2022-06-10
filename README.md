@@ -99,3 +99,15 @@ Code:
 const number = 15;
 PrimeCheck(number);
 Expected Output = (7) ['15 is not prime', 2, 3, 7, 11, 13]
+
+
+
+Describe: PrimeFactors()
+
+
+Test: "Should take a number and an array of lesser primes, and return an array of the number's prime factors"
+Code:
+const number = 15;
+const primes = [2, 3, 5, 7, 11, 13]
+PrimeFactors(number, primes);
+Expected Output: (2) [3, 5]
