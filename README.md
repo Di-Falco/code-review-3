@@ -111,3 +111,10 @@ const number = 15;
 const primes = [2, 3, 5, 7, 11, 13]
 PrimeFactors(number, primes);
 Expected Output: (2) [3, 5]
+
+Test: "Should take a number and an array of lesser primes, and return the unique prime factorization"
+Code:
+const number = 36;
+const primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31]
+PrimeFactors(number, primes);
+Expected Output: 2 * 2 * 3 * 3

@@ -102,6 +102,7 @@ $(document).ready(function() {
     $(".num").text(inputNum);
     $(".prime-factors").text(factors.join(" * "));
     $(".prime-list").text(primeList.join(", "));
-
+    
+    $(".tolley-animation").show();
   });
 });

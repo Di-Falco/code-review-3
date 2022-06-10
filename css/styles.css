@@ -70,3 +70,18 @@ body {
   background-color:lightblue;
   color: black;
 }
+
+a#trolley-animation {
+  display: none;
+  animation: trolley-animation 5s;
+}
+
+@keyframes trolley-animation
+{
+  from {
+      left: 0;
+  }
+  to {
+      left: 100%;
+  }
+}
