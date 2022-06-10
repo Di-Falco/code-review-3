@@ -49,3 +49,9 @@ Code:
 const number = "hello";
 PrimeCheck(number);
 Expected Output: 'Error: Please input a positive number. Do not include any characters.'
+
+Test: "Should return a seperate statement if input is equal to 1"
+Code:
+const number = 1;
+PrimeCheck(number);
+Expected Output: "1 is not a prime or a composite number."

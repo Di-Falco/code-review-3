@@ -35,6 +35,9 @@ function PrimeCheck (number) {
   if (!Number(size) || size <= -1) {
     return "Error: Please input a positive number. Do not include any characters.";
   }
+  if (number === 1) {
+    return "1 is not a prime or a composite number.";
+  }
 }
 
 // UI LOGIC
