@@ -77,4 +77,14 @@ $(document).ready(function() {
 
     $(".output").text(resultString);
   });
+  $("form#primes").submit(function(event) {
+    event.preventDefault();
+    const inputNum = $("#inputNumber").val();
+    const prime = PrimeCheck(inputNum);
+    const primeStatus = prime[0];
+    const primeList = prime.slice(1).join(", ");
+
+    $(".prime-status").text(primeStatus);
+    $(".prime-list").text(primeList);
+  });
 });

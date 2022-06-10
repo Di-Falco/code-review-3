@@ -26,6 +26,7 @@ select.form-control:focus::-ms-value {
   border-radius: 15px;
   background-color: #ffe1ba;
   margin: auto;
+  margin-top: 1%;
   display: block;
 }
 
