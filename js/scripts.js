@@ -1,9 +1,9 @@
+
 // UTILITY LOGIC
 
 function StringToArray(text) {
   text = String (text);
   text = text.split("");
-  console.log(text);
   return text;
 }
 
@@ -11,7 +11,7 @@ function StringToArray(text) {
 
 function MrRogersNeighborhood(input) {
   size = parseInt(input);
-  if (!Number(size)) {
+  if (!Number(size) || size < 0) {
     return "Error: Please input a positive number. Do not include any characters.";
   }
   let array = [];
@@ -27,9 +27,17 @@ function MrRogersNeighborhood(input) {
       array[i] = 'Beep!';
     }
   }
-  console.log(array);
+  return array.join(" ");
 }
 
-StringToArray("123");
+// UI LOGIC
 
-MrRogersNeighborhood("13");
+$(document).ready(function() {
+  $("form#mr-rogers").submit(function(event) {
+    event.preventDefault();
+    const inputNum = $("#inputNumber").val();
+    const resultString = MrRogersNeighborhood(inputNum);
+
+    $(".output").text(resultString);
+  });
+});
