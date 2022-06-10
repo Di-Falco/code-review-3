@@ -32,7 +32,8 @@ function MrRogersNeighborhood(input) {
 
 function PrimeCheck (number) {
   number = parseInt(number);
-  let primeArray = [2];
+  let primeArray = [];
+  let subPrime = true;
   if (!Number(number) || number <= -1) {
     return "Error: Please input a positive number. Do not include any characters.";
   } else if (number === 1) {
@@ -41,18 +42,20 @@ function PrimeCheck (number) {
     return "2 is prime";
   } else {
     for (let i = 2; i < number; i++) {
+      subPrime = true;
       if (number % i === 0) {
         return String(number) + " is not prime";
       } else {
         for (let j = 2; j < i; j++) {
           if (i % j === 0) {
+            subPrime = false;
             break;
           }
         }
+        if (subPrime === true) {
+          primeArray.push(i);
+        }
       } 
-      if (!primeArray.includes(i)) {
-        primeArray.push(i);
-      }
     }
     primeArray.push(number);
     console.log(primeArray); 
