@@ -36,11 +36,11 @@ function PrimeCheck (number) {
   let prime = true;
   let subPrime = true;
   if (!Number(number) || number <= -1) {
-    return "Error: Please input a positive number. Do not include any characters.";
+    primeArray.unshift("Error: Please input a positive number. Do not include any characters.");
+    return primeArray;
   } else if (number === 1) {
-    return "1 is not a prime or a composite number.";
-  } else if (number === 2) {
-    return "2 is prime";
+    primeArray.unshift("1 is not a prime or a composite number");
+    return primeArray;
   } else {
     for (let i = 2; i < number; i++) {
       subPrime = true;
@@ -59,9 +59,11 @@ function PrimeCheck (number) {
     }
     if (prime === true) {
       primeArray.push(number);
+      primeArray.unshift(number+ " is prime");
+    } else {
+      primeArray.unshift(number+ " is not prime");
     }
-    console.log(primeArray); 
-    return String(number) + " is prime";
+    return primeArray;
   }
 }
 

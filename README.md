@@ -91,3 +91,9 @@ PrimeCheck(number);
 console.log(primeArray);
 Expected Output: (6) [2, 3, 5, 7, 11, 13]
                  '15 is not prime'
+
+Test: "Should output an array that includes whther or not the input is prime, followed by all primes less than input"
+Code:
+const number = 15;
+PrimeCheck(number);
+Expected Output = (7) ['15 is not prime', 2, 3, 7, 11, 13]
