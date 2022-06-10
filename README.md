@@ -29,7 +29,7 @@ The second HTML file is similar, except it takes the user's input and outputs th
 
 * Clone this repository from Github
 * Open either HTML file in your web browser
-* Alternatively you can visit the Github pages at this link: [INSERT THE LINK HERE]
+* Alternatively you can visit the Github pages at this link: https://di-falco.github.io/code-review-3/
 
 ## Known Bugs
 
