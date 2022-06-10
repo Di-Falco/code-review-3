@@ -1,10 +1,29 @@
 h2 {
   text-align: center;
+  font-weight: bold;
+}
+
+h4 {
+  text-align: center;
 }
 
 p {
   text-align: center;
   font-weight: 500;
+}
+
+.clickable {
+  cursor: pointer;
+  color: #1772ce;
+  font-weight: bold;
+}
+
+.clickable:hover {
+  color: #4dd3ff;
+}
+
+.container {
+  padding-bottom: 5%;
 }
 
 .form-control {
@@ -45,6 +64,9 @@ select.form-control:focus::-ms-value {
 }
 
 body {
-  background-color: burlywood;
+  background-image: url("https://www.misterrogers.org/wp-content/uploads/2018/09/Pinchable-Neighborhood-Cropped-smaller.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-color:lightblue;
   color: black;
 }

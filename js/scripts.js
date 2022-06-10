@@ -70,10 +70,9 @@ function PrimeCheck (number) {
 function PrimeFactors(number, array) {
   let factorArray = [];
   for(let i = 0; i < array.length; i++) {
-    if(number % array[i] === 0){
+    while(number % array[i] === 0){
       factorArray.push(array[i]);
-      console.log(array[i], (number % array[i]));
-      console.log(factorArray);
+      number /= array[i]
     }
   }
   return factorArray;
@@ -100,7 +99,8 @@ $(document).ready(function() {
     console.log(factors);
 
     $(".prime-status").text(primeStatus);
-    $(".prime-factors").text(factors);
+    $(".num").text(inputNum);
+    $(".prime-factors").text(factors.join(" * "));
     $(".prime-list").text(primeList.join(", "));
 
   });
