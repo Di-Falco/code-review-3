@@ -152,6 +152,13 @@ The second HTML file is similar, except it takes the user's input and outputs th
 >PrimeFactors(number, primes);<br>
 >Expected Output: 2 * 2 * 3 * 3<br>
 
+>Test: "Should count the number of each unique factor and format the output as exponents"<br>
+>Code:<br>
+>const number = 36;<br>
+>const primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31]<br>
+>PrimeFactors(number, primes);<br>
+>Expected Output: 2^2 * 3^2<br>
+
 ## License
 
 {Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}

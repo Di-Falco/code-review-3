@@ -75,7 +75,21 @@ function PrimeFactors(number, array) {
       number /= array[i]
     }
   }
-  return factorArray;
+  let simpleFactors = [];
+  let power = 1;
+  for (let i = 0; i < factorArray.length; i++) {
+    power = 1;
+    while (factorArray[i] === factorArray[i+1]) {
+      power++;
+      i++;
+    }
+    if(power !== 1){
+      simpleFactors.push(factorArray[i] + "^" + power);
+    } else {
+      simpleFactors.push(factorArray[i]);      
+    }
+  }
+  return simpleFactors;
 }
 
 // UI LOGIC
