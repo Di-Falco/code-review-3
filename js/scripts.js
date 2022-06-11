@@ -84,7 +84,8 @@ function PrimeFactors(number, array) {
       i++;
     }
     if(power !== 1){
-      simpleFactors.push(factorArray[i] + "^" + power);
+      power = String(power);
+      simpleFactors.push(factorArray[i] + power.sup());
     } else {
       simpleFactors.push(factorArray[i]);      
     }
@@ -139,7 +140,7 @@ $(document).ready(function() {
 
     $(".prime-status").text(primeStatus);
     $(".num").text(inputNum);
-    $(".prime-factors").text(factors.join(" * "));
+    $(".prime-factors").html(factors.join(" * "));
     $(".prime-list").text(primeList.join(", "));
   });
 
