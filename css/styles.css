@@ -53,7 +53,7 @@ select.form-control:focus::-ms-value {
   border: 5px solid darkred;
   border-radius: 15px;
   background-color: burlywood;
-  padding: 4%;
+  padding: 3%;
   margin: auto;
   margin-top: 1%;
   margin-bottom: 1%;
@@ -68,5 +68,6 @@ body {
   background-size: cover;
   background-position: bottom;
   background-color:lightblue;
+  background-attachment: fixed;
   color: black;
 }

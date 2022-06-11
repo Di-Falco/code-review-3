@@ -36,7 +36,8 @@ The third HTML (binary) file takes a user input integer and returns the value in
 
 ## Known Bugs
 
-* No known bugs
+* Very large numbers cause problems with the way the HTML displays, especially in the case of primes.html
+* Large numbers in general (predictably) cause the webpage to slow down.
 
 ## Tests
 
