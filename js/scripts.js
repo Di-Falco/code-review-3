@@ -94,6 +94,10 @@ function PrimeFactors(number, array) {
 
 function BinaryConverter(decimal) {
   let binaryArray = [];
+  if (!Number(decimal) || decimal <= -1) {
+    binaryArray.unshift("Error: Please input a positive number. Do not include any characters.");
+    return binaryArray;
+  }
   while(decimal > 0) {
     if(decimal % 2 === 0){
       binaryArray.unshift('0');
