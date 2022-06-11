@@ -162,9 +162,20 @@ $(document).ready(function() {
 
   $("form#decimal-to-binary").submit(function(event) {
     event.preventDefault();
-    const inputNum = $("#inputNumber").val();
-    const resultString = BinaryConverter(inputNum);
+    const inputDecimal = $("#inputDecimal").val();
+    const resultBinary = BinaryConverter(inputDecimal);
 
-    $(".output").text(resultString);
+    $(".outputBinary").text(resultBinary);
+  });
+
+  $("form#binary-to-decimal").submit(function(event) {
+    event.preventDefault();
+    const inputBinary = $("#inputBinary").val();
+    const resultDecimal = DecimalConverter(inputBinary);
+    if (resultDecimal === -1) {
+      $(".outputDecimal").text("Error: Please input a binary number. Exclude all spaces and extraneous characters");     
+    } else {
+      $(".outputDecimal").text(resultDecimal);
+    }
   });
 });
