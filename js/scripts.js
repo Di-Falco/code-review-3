@@ -102,6 +102,9 @@ function BinaryConverter(decimal) {
     }
     decimal = Math.floor(decimal/2);
   }
+  while(binaryArray.length%4 !== 0){
+    binaryArray.unshift('0');
+  }
   for(let i = binaryArray.length - 1; i >= 3; i--) {
     if((i)%4 === 0){
       binaryArray.splice(binaryArray.length - i, 0, " ");

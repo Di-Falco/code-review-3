@@ -175,6 +175,12 @@ The second HTML file is similar, except it takes the user's input and outputs th
 >```BinaryConverter(number);```<br>
 >Expected Output: '1101 1001'<br>
 
+>Test: "Should append 0s to the start of the binary number so that all outputs are formatted in sections of 4 digits each"<br>
+>Code:<br>
+>```const number = 54;```<br>
+>```BinaryConverter(number);```<br>
+>Expected Output: '0011 0110'<br>
+
 ## License
 
 If you find any errors or inaccuracies in these files you can email me at aodifalco@gmail.com 
