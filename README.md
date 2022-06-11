@@ -15,9 +15,9 @@
 
 This is a webpage with two linked HTML files. The home page features a text box asking for a positive integer input. When the user submits a valid input, the output box displays each number from 0 to the input value, but replaces some numbers as follows:
 
-1 Any number containing a 3 is replaced with "Won't you be my neighbor?"
-2 Any number containing a 2 is replaced with "Boop!"
-3 Any number containing a 1 is replaced with "Beep!"
+1. Any number containing a 3 is replaced with "Won't you be my neighbor?"
+2. Any number containing a 2 is replaced with "Boop!"
+3. Any number containing a 1 is replaced with "Beep!"
 
 The second HTML file is similar, except it takes the user's input and outputs the following information:
 
@@ -28,6 +28,7 @@ The second HTML file is similar, except it takes the user's input and outputs th
 ## Setup/Installation Requirements
 
 * Clone this repository from Github
+        git clone https://github.com/Di-Falco/code-review-3
 * Open either HTML file in your web browser
 * Alternatively you can visit the Github pages at this link: https://di-falco.github.io/code-review-3/
 
@@ -160,7 +161,5 @@ The second HTML file is similar, except it takes the user's input and outputs th
 >Expected Output: 2^2 * 3^2<br>
 
 ## License
-
-{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}
 
 Copyright (c) June 10, 2022 - Anthony DiFalco
