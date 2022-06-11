@@ -92,6 +92,19 @@ function PrimeFactors(number, array) {
   return simpleFactors;
 }
 
+function BinaryConverter(decimal) {
+  let binaryArray = [];
+  while(decimal > 0) {
+    if(decimal % 2 === 0){
+      binaryArray.unshift('0');
+    } else {
+      binaryArray.unshift('1');
+    }
+    decimal = Math.floor(decimal/2);
+  }
+  return binaryArray;
+}
+
 // UI LOGIC
 
 $(document).ready(function() {
@@ -116,7 +129,5 @@ $(document).ready(function() {
     $(".num").text(inputNum);
     $(".prime-factors").text(factors.join(" * "));
     $(".prime-list").text(primeList.join(", "));
-    
-    $(".tolley-animation").show();
   });
 });

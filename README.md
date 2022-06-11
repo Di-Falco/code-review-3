@@ -13,11 +13,11 @@
 
 ## Description
 
-This is a webpage with two linked HTML files. The home page features a text box asking for a positive integer input. When the user submits a valid input, the output box displays each number from 0 to the input value, but replaces some numbers as follows:
+This is a webpage with two linked HTML files. The home page features a text box asking for a positive integer input. When the user submits a valid input, the output box displays each number from 0 to the input value, but replaces some numbers as follows (listed by ascending priority):
 
-1. Any number containing a 3 is replaced with "Won't you be my neighbor?"
+1. Any number containing a 1 is replaced with "Beep!"
 2. Any number containing a 2 is replaced with "Boop!"
-3. Any number containing a 1 is replaced with "Beep!"
+3. Any number containing a 3 is replaced with "Won't you be my neighbor?"
 
 The second HTML file is similar, except it takes the user's input and outputs the following information:
 
@@ -129,7 +129,7 @@ The second HTML file is similar, except it takes the user's input and outputs th
 >Expected Output: (6) [2, 3, 5, 7, 11, 13]<br>
 >                 '15 is not prime'<br>
 
->Test: "Should output an array that includes whther or not the input is prime, followed by all primes less >than input"<br>
+>Test: "Should output an array that includes whether or not the input is prime, followed by all primes less than input"<br>
 >Code:<br>
 >```const number = 15;```<br>
 >```PrimeCheck(number);```<br>
@@ -160,6 +160,17 @@ The second HTML file is similar, except it takes the user's input and outputs th
 >```PrimeFactors(number, primes);```<br>
 >Expected Output: 2^2 * 3^2<br>
 
+<br><strong>Describe: BinaryConverter()</strong><br>
+
+>Test: "Should return an array of 0s and 1s equivalent to the input number in binary"<br>
+>Code:<br>
+>```const number = 9;```<br>
+>```PrimeFactors(number);```<br>
+>```console.log(binaryArray)```<br>
+>Expected Output: (4) ['1', '0', '0', '1']<br>
+
 ## License
+
+If you find any errors or inaccuracies in these files you can email me at aodifalco@gmail.com 
 
 Copyright (c) June 10, 2022 - Anthony DiFalco
