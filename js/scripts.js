@@ -118,6 +118,22 @@ function BinaryConverter(decimal) {
   return binaryArray.join("");
 }
 
+function DecimalConverter(binaryNum) {
+  let binaryArray = StringToArray(binaryNum);
+  let decimal = 0;
+  if(binaryArray.every(x => x === '1' || x=== '0')) {
+    for (let i = binaryArray.length-1; i >= 0; i--) {
+      binaryArray[i] = parseInt(binaryArray[i]);
+      if (binaryArray[i] === 1) {
+        decimal += Math.pow(2, binaryArray.length-1-i);
+      }
+    }
+  } else {
+    decimal = -1;
+  }
+  return decimal;
+}
+
 // UI LOGIC
 
 $(document).ready(function() {
