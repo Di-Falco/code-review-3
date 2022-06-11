@@ -165,9 +165,15 @@ The second HTML file is similar, except it takes the user's input and outputs th
 >Test: "Should return an array of 0s and 1s equivalent to the input number in binary"<br>
 >Code:<br>
 >```const number = 9;```<br>
->```PrimeFactors(number);```<br>
+>```BinaryConverter(number);```<br>
 >```console.log(binaryArray)```<br>
 >Expected Output: (4) ['1', '0', '0', '1']<br>
+
+>Test: "Should return a string of 0s and 1s equal to the binary of the input number, seperated by a space every 4 digits"<br>
+>Code:<br>
+>```const number = 217;```<br>
+>```BinaryConverter(number);```<br>
+>Expected Output: '1101 1001'<br>
 
 ## License
 

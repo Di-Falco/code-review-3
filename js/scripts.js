@@ -102,7 +102,12 @@ function BinaryConverter(decimal) {
     }
     decimal = Math.floor(decimal/2);
   }
-  return binaryArray;
+  for(let i = binaryArray.length - 1; i >= 3; i--) {
+    if((i)%4 === 0){
+      binaryArray.splice(binaryArray.length - i, 0, " ");
+    }
+  }
+  return binaryArray.join("");
 }
 
 // UI LOGIC
@@ -129,5 +134,13 @@ $(document).ready(function() {
     $(".num").text(inputNum);
     $(".prime-factors").text(factors.join(" * "));
     $(".prime-list").text(primeList.join(", "));
+  });
+
+  $("form#decimal-to-binary").submit(function(event) {
+    event.preventDefault();
+    const inputNum = $("#inputNumber").val();
+    const resultString = BinaryConverter(inputNum);
+
+    $(".output").text(resultString);
   });
 });
